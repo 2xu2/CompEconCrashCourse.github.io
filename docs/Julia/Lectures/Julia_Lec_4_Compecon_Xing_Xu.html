@@ -136,6 +136,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -1273,7 +1274,7 @@ w_t(R_t) = A^{\frac{1}{1-\alpha}} (1 - \alpha) \alpha^{\frac{\alpha}{1 - \alpha}
 </section>
 <section id="transition-dynamics-for-incomplete-market-extended-reading" class="level3">
 <h3 class="anchored" data-anchor-id="transition-dynamics-for-incomplete-market-extended-reading">4. Transition dynamics for incomplete market (extended reading)</h3>
-<p>Economists are often interested in the short-run response of agents given an unexpected one-time shock (often referred to as the MIT shock). Now we have the tools to compute the stationary competitive equilibrium. However as you can see, even under stationarity, this is a not very simple.</p>
+<p>Economists are often interested in the short-run response of agents given an unexpected one-time shock (often referred to as the MIT shock). Now we have the tools to compute the stationary competitive equilibrium. However as you can see, even under stationarity, this is not very simple.</p>
 <p>Assuming that households don’t have perfect foresight over prices, this implies that household needs to know everyone else’s state today (knowing the distribution is sufficient) to estimate the prices next period. In dynamic programming term, you need the whole distribution as an additional state variable. Note that the distribution is of very high dimensionality (here <span class="math inline">\(A \times s\)</span>), taking conditional expectation over this gigantic object is merely impossible.</p>
 <p><a href="http://www.econ.yale.edu/smith/250034.pdf">Krussel Smith (1998)</a> is a very important contribution to the computation technique of the model. They are able to show that first order approximations over prices provide very accurate results because the policy function is close to linear when <span class="math inline">\(a\)</span> is not very low.</p>
 <p>Some latest developments of the field is the <a href="http://web.stanford.edu/~aauclert/sequence_space_jacobian.pdf">sequence Jacobian</a>. Auclert et al.&nbsp;provides a computation technique that is crazy fast and the <a href="https://onlinelibrary.wiley.com/doi/full/10.3982/ECTA16414">purtabation method</a> by Bhandari et al.</p>

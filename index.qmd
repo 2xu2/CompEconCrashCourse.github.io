@@ -82,3 +82,26 @@ Here are the links to the assignments:
 | [Assignment 4](https://www.classes.cs.uchicago.edu/archive/2019/fall/12100-1/pa/pa4/index.html) | Monday, June 24th |
 | [Assignment 5](https://www.classes.cs.uchicago.edu/archive/2019/fall/12100-1/pa/pa5/index.html) | Friday, June 28th |
 | Assignment 6 | Monday, July 1st |
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("Script is running");
+
+  // Function to change "Authors" to "Instructors"
+  function changeAuthorsToInstructors() {
+    const headings = document.querySelectorAll('.quarto-title-meta-heading');
+    console.log("Found headings:", headings);
+    headings.forEach(function(heading) {
+      console.log("Checking heading:", heading.textContent.trim());
+      if (heading.textContent.trim() === "Authors") {
+        heading.textContent = "Instructors";
+        console.log("Changed 'Authors' to 'Instructors'");
+      }
+    });
+  }
+
+  // Run the function once to catch the initial load
+  changeAuthorsToInstructors();
+});
+</script>
